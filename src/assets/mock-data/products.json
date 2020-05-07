@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Champakali",
+    "brand": "Sweet",
+    "price": 100,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.",
+    "image": "Champakali_COMPRESSED.jpg"
+  },
+  {
+    "title": "CHOCO BISCUITS",
+    "brand": "Sweet",
+    "price": 200,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. Curabitur ac pharetra nisl, sit amet mattis dolor.",
+    "image": "CHOCO_BISCUITS_COMPRESSED.jpg"
+  },
+  {
+    "title": "CHOCO BISCUITS",
+    "brand": "Sweet",
+    "price": 222,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. Curabitur ac pharetra nisl, sit amet mattis dolor.",
+    "image": "CHOCO_BISCUITS_COMPRESSED.jpg"
+  },
+  {
+    "title": "Dry Jamoon",
+    "brand": "Sweet",
+    "price": 282,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.",
+    "image": "Dry_Jamoon_COMPRESSED.jpg"
+  },
+  {
+    "title": "Kaju_Roll_COMPRESSED",
+    "brand": "Sweet",
+    "price": 282,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.",
+    "image": "Kaju_Roll_COMPRESSED.jpg"
+  },
+  {
+    "title": "Kaju_Sandwich_COMPRESSED",
+    "brand": "Sweet",
+    "price": 18,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.",
+    "image": "Kaju_Sandwich_COMPRESSED.jpg"
+  }
+]
