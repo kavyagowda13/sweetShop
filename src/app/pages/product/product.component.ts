@@ -39,7 +39,9 @@ export class ProductComponent implements OnInit {
             })
     };
     changeQuantity = (newQuantity:number) => {
-        this.quantity = newQuantity;
+				this.quantity = newQuantity;
+				const cartDetail = {'title' : this.product.title , 'quantity' : this.quantity};
+				this.cartService.nextMessage(cartDetail);
     };
     addToCart = (product) => {
         if(this.quantity) this.cartService.addToCart({product,quantity:this.quantity})
