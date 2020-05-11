@@ -17,10 +17,6 @@ export const appRoutes=[
         path:'cart',
         loadChildren:'./pages/cart/cart-page.module#CartPageModule'
 		},
-		{
-			path:'productcard',
-			loadChildren:'./pages/productcard/productcard.module#ProductCardsModule'
-	  },
     {
         path:'**',
         loadChildren:'./pages/category/category.module#CategoryModule'

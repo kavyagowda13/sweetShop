@@ -46,8 +46,10 @@
 						</div>
 					</div>
 				</div>
+
+
+				<app-productcards *ngIf = "!product.title"></app-productcards>
+
 			</div>
 	</div>
 </div>
-
-<app-productcards *ngIf = "!products"></app-productcards>
