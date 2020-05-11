@@ -1,0 +1,25 @@
+<div class="layout-container">
+	<h1 style = "text-align: center;"> <span class = "title-color">POPULAR </span> <span class = "title-color2">SWEETS </span></h1>
+	<div class="product-grid">
+			<div class="col-md-4 col-sm-6" *ngFor="let product of products;let i = index">
+				<div class="product-cards" *ngIf = "i <= 2">
+					<div class="product-tumbs">
+						<div class="product-image" [ngStyle]="{'background-image': 'url(./assets/imgs/' + product.image + ')'}"></div>
+		
+					</div>
+					<div class="product-detailss">
+					
+						<h4><a href="">{{product.title}}</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur </p>
+						<div class="product-bottom-details">
+							<div class="product-prices"> <span class="grams">250 Gms</span> <span class="pricess"> {{product.price}} </span></div>
+							<div class="product-links">
+								<div class="product-cart-button button button-primary" (click)="addToCart(product)">cart</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>

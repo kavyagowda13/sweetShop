@@ -18,6 +18,8 @@ export class CartPageComponent extends CartBaseComponent{
     }
     changeQuantity = (cart,quantity) => {
         cart.quantity = quantity;
-        this.cartService.reloadCart(this.cartList);
+				this.cartService.reloadCart(this.cartList);
+				const cartDetail = {'title' : cart.product.title , 'quantity' : cart.quantity};
+				this.cartService.nextMessage(cartDetail);
     }
 }

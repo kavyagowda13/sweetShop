@@ -12,17 +12,25 @@ import {CartService} from "../../services/cart.service";
 export class ProductComponent implements OnInit {
     private sub;
     public product:Product;
-    quantity: number = 1;
+		quantity: number = 1;
+		message : object;
+
     constructor(private route: ActivatedRoute,
                 private productService:ProductService,
                 private cartService:CartService
-    ) { }
+    ) { 
+
+		
+		}
 
     ngOnInit() {
+			
         this.route.params
             .subscribe(res => {
                 this.getProduct(res.id);
-            })
+						})
+					this.cartService.sharedMessage.subscribe(data => 
+					{this.message  = data});
     }
     getProduct = (id) => {
         this.sub = this.productService.getProducts('./assets/mock-data/products.json')

@@ -10,6 +10,8 @@ import {TopbarComponent} from "./components/topbar/topbar.component";
 import {CartService} from "./services/cart.service";
 import {CartPopupComponent} from "./pages/cart/cart-popup/cart-popup.component";
 import {ProductService} from "./services/products.service";
+import {CategoryModule} from './pages/category/category.module';
+
 
 @NgModule({
     declarations: [
@@ -21,7 +23,8 @@ import {ProductService} from "./services/products.service";
         BrowserAnimationsModule,
         BrowserModule,
         FormsModule,
-        HttpModule,
+				HttpModule,
+				CategoryModule,
         RouterModule.forRoot(appRoutes)
     ],
     providers: [CartService,ProductService],

@@ -8,7 +8,9 @@ import {Cart} from "../model/cart";
 export class CartService {
 
     public cartListSubject = new BehaviorSubject([]);
-    public toggleCartSubject = new BehaviorSubject(false);
+		public toggleCartSubject = new BehaviorSubject(false);
+		private message = new BehaviorSubject({});
+		sharedMessage = this.message.asObservable();
 
     toggleCart = () => {
         this.toggleCartSubject.next(!this.toggleCartSubject.getValue());
@@ -27,5 +29,9 @@ export class CartService {
         let current = this.cartListSubject.getValue();
         current.splice(index,1);
         this.cartListSubject.next(current);
-    };
+		};
+		
+		nextMessage(message: object) {
+			this.message.next(message)
+		}
 }
